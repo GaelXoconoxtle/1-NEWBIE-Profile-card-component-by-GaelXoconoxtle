@@ -1,0 +1,180 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background-color: var(--dark-cyan);
+  background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+  background-size: 600px, 600px;
+  background-position: -70% 320%, 164% -320%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 330px;
+}
+
+.container .card .top-card {
+  margin-bottom: 74px;
+}
+
+.container .card .middle-card .primary-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.container .card .middle-card .primary-info .name {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 700;
+  padding-right: 8px;
+}
+
+.container .card .middle-card .primary-info .age {
+  color: var(--dark-gray);
+}
+
+.container .card .middle-card .city {
+  color: var(--dark-gray);
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.container .card .bottom-card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .card .bottom-card hr {
+  height: 1px;
+  margin-bottom: 24px;
+  width: 100%;
+  opacity: 50%;
+}
+
+.container .card .bottom-card .secondary-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin-right: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.container .card .bottom-card .secondary-info .followers .number {
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+  margin-bottom: 2px;
+}
+
+.container .card .bottom-card .secondary-info .followers p {
+  color: var(--dark-gray);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.container .card .bottom-card .secondary-info .likes .number {
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+  margin-bottom: 2px;
+}
+
+.container .card .bottom-card .secondary-info .likes p {
+  color: var(--dark-gray);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.container .card .bottom-card .secondary-info .photos .number {
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+  margin-bottom: 2px;
+}
+
+.container .card .bottom-card .secondary-info .photos p {
+  color: var(--dark-gray);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.container .card .profile-photo {
+  position: absolute;
+  border-radius: 50px;
+  border: 5px solid white;
+  top: 86px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-size: 1000px, 1000px;
+    background-position: 134% -200%, -38% 300%;
+  }
+  .card {
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  }
+}
+/*# sourceMappingURL=index.css.map */
